@@ -1,0 +1,24 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --blue-100: #84c4ea;
+  --blue-200: #444561;
+  --blue-300: #323351;
+  --orange-100: #f78364;
+  --orange-200: #f5643d;
+  --pink: #f9f0ee;
+}
+
+button{
+  cursor: pointer;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}

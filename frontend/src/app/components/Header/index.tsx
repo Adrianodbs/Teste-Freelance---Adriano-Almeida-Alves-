@@ -1,6 +1,7 @@
 import styles from './styles.module.scss'
 import Logo from '../../assets/img/logo.svg'
 import RightImage from '../../assets/img/right.svg'
+import LeftImage from '../../assets/img/selo.svg'
 import Orcamento from '../../assets/img/orcamento.svg'
 import Image from 'next/image'
 
@@ -23,6 +24,11 @@ export default function Header() {
         Orçamento
       </button>
       <Image className={styles.rightImage} src={RightImage} alt="Pontos" />
+      <Image
+        className={styles.leftImage}
+        src={LeftImage}
+        alt="made with science"
+      />
     </header>
   )
 }
