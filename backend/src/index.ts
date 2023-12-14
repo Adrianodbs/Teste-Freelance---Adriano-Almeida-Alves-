@@ -3,7 +3,7 @@ import cors from 'cors'
 import mongoose, { Schema} from 'mongoose'
 
 const app = express()
-const port = 3000
+const port = 3333
 
 const productSchema = new Schema({
   title: String,
