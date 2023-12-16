@@ -1,7 +1,7 @@
 import Card from '../Card'
 import styles from './styles.module.scss'
 import Produto1 from '../../assets/img/produto1.svg'
-import Garrafa from '../../assets/img/garrafa.svg'
+import Garrafas from '../../assets/img/garrafas.svg'
 
 export default function Cards() {
   return (
@@ -13,8 +13,7 @@ export default function Cards() {
       />
       <Card
         title="Químicos"
-        img={Garrafa}
-        img2={Garrafa}
+        img={Garrafas}
         description="Materiais Químicos"
         isMiddleCard
       />

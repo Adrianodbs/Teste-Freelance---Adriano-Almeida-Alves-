@@ -17,10 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={dmSans.className}>
-        <Header />
-        {children}
-      </body>
+      <body className={dmSans.className}>{children}</body>
     </html>
   )
 }

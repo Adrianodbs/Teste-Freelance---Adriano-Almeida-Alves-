@@ -15,7 +15,7 @@ export default function Product({ img_url, title, note, price }: ProductProps) {
       <div className={styles.description}>
         <div className={styles.title}>
           <p>{title}</p>
-          <span>{note}.0</span>
+          <span>Nota:{note}.0</span>
         </div>
         <p>R${price},00</p>
       </div>

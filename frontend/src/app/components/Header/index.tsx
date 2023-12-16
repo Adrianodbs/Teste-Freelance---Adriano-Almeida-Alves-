@@ -4,6 +4,7 @@ import RightImage from '../../assets/img/right.svg'
 import LeftImage from '../../assets/img/selo.svg'
 import Orcamento from '../../assets/img/orcamento.svg'
 import Image from 'next/image'
+import ProductList from '../ProductList'
 
 export default function Header() {
   return (
@@ -29,6 +30,8 @@ export default function Header() {
         src={LeftImage}
         alt="made with science"
       />
+
+      <ProductList />
     </header>
   )
 }
