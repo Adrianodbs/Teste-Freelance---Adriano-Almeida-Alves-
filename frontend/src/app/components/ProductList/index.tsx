@@ -8,6 +8,11 @@ import Plastico from '../../assets/img/plastico.svg'
 import Vidrarias from '../../assets/img/vidrarias.svg'
 import Inox from '../../assets/img/inox.svg'
 import Porcelanas from '../../assets/img/porcelanas.svg'
+import ProductListContent from '../ProductListContent'
+
+interface ProductListProps {
+  className?: string
+}
 
 export default function ProductList() {
   return (
@@ -16,40 +21,19 @@ export default function ProductList() {
       <div className={styles.lab}>
         <h4>Laborátório</h4>
         <div className={styles.labItems}>
-          <div className={styles.item}>
-            <Image src={Equipamentos} alt="Equipamentos" />
-            <p>Equipamentos</p>
-          </div>
-          <div className={styles.item}>
-            <Image src={Acessorio} alt="Equipamentos" />
-            <p>Acessórios</p>
-          </div>
-          <div className={styles.item}>
-            <Image src={Termometro} alt="Equipamentos" />
-            <p>Termômetros</p>
-          </div>
+          <ProductListContent img={Equipamentos} title="Equipamentos" />
+          <ProductListContent img={Acessorio} title="Acessórios" />
+          <ProductListContent img={Termometro} title="Termômetros" />
         </div>
       </div>
 
       <div className={styles.lab}>
         <h4>Utensílios</h4>
         <div className={styles.labItems}>
-          <div className={styles.item}>
-            <Image src={Inox} alt="Equipamentos" />
-            <p>Inox e Ferragens</p>
-          </div>
-          <div className={styles.item}>
-            <Image src={Plastico} alt="Equipamentos" />
-            <p>Plásticos</p>
-          </div>
-          <div className={styles.item}>
-            <Image src={Vidrarias} alt="Equipamentos" />
-            <p>Vidrarias</p>
-          </div>
-          <div className={styles.item}>
-            <Image src={Porcelanas} alt="Equipamentos" />
-            <p>Porcelanas</p>
-          </div>
+          <ProductListContent img={Inox} title="Inox e Ferragens" />
+          <ProductListContent img={Plastico} title="Plásticos" />
+          <ProductListContent img={Vidrarias} title="Vidrarias" />
+          <ProductListContent img={Porcelanas} title="Porcelanas" />
         </div>
       </div>
     </div>
