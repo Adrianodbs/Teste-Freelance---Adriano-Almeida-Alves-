@@ -29,6 +29,10 @@
       cursor: pointer;
       transition: all .2s;
 
+      &.selected{
+        color: var(--orange-100);
+      }
+
       &:hover{
         color: var(--blue-100);
       }
@@ -67,3 +71,4 @@
     opacity: .8;
   }
 }
+

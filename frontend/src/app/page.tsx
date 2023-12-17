@@ -1,10 +1,14 @@
+'use client'
 import HomePage from './home/page'
-import variables from './styles/variables.module.scss'
+import { Provider } from 'react-redux'
+import store from '../app/redux/store'
 
 export default function Home() {
   return (
     <div>
-      <HomePage />
+      <Provider store={store}>
+        <HomePage />
+      </Provider>
     </div>
   )
 }
