@@ -9,8 +9,25 @@
   color: var(--blue-300);
   padding: 60px;
 
+  @media screen and (max-width: 980px){
+    width: 100%;
+    height: 240px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+   
+  }
+
+  @media screen and (max-width: 450px){
+    padding: 20px;     
+  }
+
   p{
     font-weight: 700;
+
+    @media screen and (max-width: 980px){
+      display: none;
+    }
   }
 
   h2{
@@ -24,22 +41,56 @@
   color: #fff;
   height: 420px;
 
+  @media screen and (max-width: 980px){
+   
+    height: 240px;
+   
+  }
+
   .description{
-    padding-bottom: 20px;
-    
+    padding-bottom: 20px; 
+
+    @media screen and (max-width: 980px){
+      padding-bottom: 0;  
+    }
   }
 }
 
-.images{
-  display: flex;
+.description{
+  @media screen and (max-width: 980px){
+    display: flex;
+    align-items: center;
+    
+    width: 100%;
+    gap: 20px;
+  }
 }
+
+
 
 .img1{
   width: 28px;
   object-fit: contain;
 }
+
 .img2{
-  width: 12px;
+  width: 28px;
   object-fit: contain;
-  margin-top: 6px;
+  display: none;
+
+  @media screen and (max-width: 980px){
+    display: block;
+  }
+}
+
+.rightResp{
+  display: none;
+
+  @media screen and (max-width: 980px){
+    display: block;
+  }
+
+  @media screen and (max-width: 450px){
+    display: none;    
+  }
 }
