@@ -48,14 +48,18 @@ export default function Header() {
         <Image src={Orcamento} alt="Orçamento" />
         Orçamento
       </button>
-      <Image className={styles.rightImage} src={RightImage} alt="Pontos" />
-      <Image
-        className={styles.leftImage}
-        src={LeftImage}
-        alt="made with science"
-      />
+      {!productOpen && (
+        <>
+          <Image className={styles.rightImage} src={RightImage} alt="Pontos" />
+          <Image
+            className={styles.leftImage}
+            src={LeftImage}
+            alt="made with science"
+          />
+        </>
+      )}
 
-      <ProductList />
+      {productOpen && <ProductList />}
     </header>
   )
 }
