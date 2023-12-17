@@ -14,6 +14,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { toggleMenu, toggleProduct } from '../../redux/productSlice'
 import { RootState } from '@/app/redux/rootReducer'
 import MenuOpenContainer from '../MenuOpen'
+import MenuClose from '../MenuClose'
 
 export default function Header() {
   const dispatch = useDispatch()
@@ -81,6 +82,12 @@ export default function Header() {
       {productOpen && (
         <div className={styles.productList}>
           <ProductList />
+        </div>
+      )}
+
+      {!menuOpen && (
+        <div className={styles.closeMenu}>
+          <MenuClose />
         </div>
       )}
 

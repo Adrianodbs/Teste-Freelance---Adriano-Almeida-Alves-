@@ -1,0 +1,26 @@
+.closeMenu{
+  color: #fff;
+  padding: 60px 0;
+
+
+  h2{
+    font-weight: 300;
+    font-size: 32px;
+    margin-bottom: 12px;
+
+    span{
+      color: var(--blue-100);
+    }
+  }
+
+  p{
+    font-weight: 300;
+  }
+}
+
+.img{
+  position: absolute;
+  bottom: -18%;
+  left: 50%;
+  transform: translateX(-50%);
+}

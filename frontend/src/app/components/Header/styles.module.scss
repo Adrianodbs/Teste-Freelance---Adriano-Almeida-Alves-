@@ -7,6 +7,14 @@
   width: 100%;
   overflow: hidden;
 
+  .closeMenu{
+    display: none;
+
+    @media screen and (max-width: 980px) {
+      display: block;
+    }
+  }
+
   .headerTop{
     display: flex;
     justify-content: space-between;
